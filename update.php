@@ -63,6 +63,20 @@
                 }
             ?>
             </form>
+            <form action="addImage.php" method="POST" enctype="multipart/form-data">
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="form-group">
+                            <label for="fileUpload">Tambahkan foto</label>
+                            <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
+                            <input type="file" name="afile" class="form-control-file" id="fileUpload">
+                            <input type="submit" name="simpan" value="Tambahkan foto" class="btn btn-primary" />
+                        </div>
+                    </td>
+                    <td></td><td></td>
+                </tr>
+            </form>
         </tbody>
     </table>
     <script src="js/bootstrap.min.js"></script>
